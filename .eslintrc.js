@@ -9,8 +9,16 @@ module.exports = {
     'airbnb-base',
     'prettier',
     'eslint:recommended',
+    'plugin:import/react',
     'plugin:react/recommended'
   ],
+   "settings": {
+        "import/resolver": {
+          "node": {
+            "extensions": [".js",".jsx"]
+          }
+        }
+    },
   parserOptions: {
     ecmaVersion: 2021,
     sourceType: 'module'
